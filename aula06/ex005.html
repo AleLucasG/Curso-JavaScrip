@@ -6,26 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primeiro passos com DOM</title>
 
-    <style>
+    <style> /* CONFIGURAÇÕES BASICAS DE CSS */
         body {
-            background-color: rgb(112, 45, 175); /* cor do fundo */
-            color: white;
-            font: normal 20pt Arial;
+            background-color: rgb(112, 45, 175);    /* cor do fundo */
+            color: white;   /* cor da letra */
+            font: normal 20pt Tahoma;   /*cor d fonte */
         }
 
     </style>
 
 </head>
 
-<body>
-    <h1> Iniciando estudos com DOM</h1>
-    <p>Aqui vai o resultado</p> 
-    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+<body>  <!-- HTML CORPO -->
+    <h1> Iniciando estudos com DOM</h1> 
+    <p>Aqui vai o resultado</p>     <!-- 1° paragrafo -->
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>       <!-- 2° paragrafo -->
     <div>Clique em mim</div>
 
-    <script>
-        var p1 = window.document.getElementsByTagName('p')[0];
+    <script>    // JAVASCRIPT //
+        var p1 = window.document.getElementsByTagName('p')[0];  // selecionando o 1° paragrafo //
         window.document.write('Está escrito assim: ' + p1.innerText);
     </script>
+
 </body>
 </html>
