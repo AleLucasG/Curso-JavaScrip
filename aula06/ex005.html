@@ -21,13 +21,14 @@
     <h1> Iniciando estudos com DOM</h1> 
     <p>Aqui vai o resultado</p>     <!-- 1° paragrafo -->
     <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>       <!-- 2° paragrafo -->
-    <div>Clique em mim</div>
+    <div id="msg">Clique em mim</div>
 
     <script>    // JAVASCRIPT //
         var corpo = window.document.body
         var p1 = window.document.getElementsByTagName('p')[1];  // selecionando o 1° paragrafo //
-        
-        window.alert(p1.innerText)
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+
         //window.document.write('Está escrito assim: ' + p1.innerText);
     </script>
 
