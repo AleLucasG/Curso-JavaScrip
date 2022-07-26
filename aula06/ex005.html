@@ -21,12 +21,12 @@
     <h1> Iniciando estudos com DOM</h1> 
     <p>Aqui vai o resultado</p>     <!-- 1° paragrafo -->
     <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>       <!-- 2° paragrafo -->
-    <div id="msg">Clique em mim</div>
+    <div class="msg">Clique em mim</div>
 
     <script>    // JAVASCRIPT //
         var corpo = window.document.body
         var p1 = window.document.getElementsByTagName('p')[1];  // selecionando o 1° paragrafo //
-        var d = window.document.querySelector('div#msg')
+        var d = window.document.querySelector('div.msg')
         d.style.background = 'blue'
 
         /*
