@@ -22,16 +22,15 @@
 
 <body> <!-- HMTL -->
     <div id="area" 
-        onclick="clicar()" 
-        onmouseenter="entrar()"
-        onmouseout="sair()"
         >
         Interaja...
     </div>
 
     <script>
         var a = window.document.getElementById('area') //Escopo global, serve p/ 3 function
-    
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouse', sair)
 
         function clicar() {
             a.innerText = 'Clicou!'
